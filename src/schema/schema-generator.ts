@@ -495,7 +495,7 @@ export abstract class SchemaGenerator {
         );
         return superClassTypeInfo ? superClassTypeInfo.type : undefined;
       };
-      const inputInstance = new (inputType.target as any)();
+      const inputInstance = {};
       return {
         target: inputType.target,
         isAbstract: inputType.isAbstract || false,
